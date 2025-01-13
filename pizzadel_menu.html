@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="pd-img/monogram-16px.png" type="image/x-icon">
+    <link rel="stylesheet" href="pd-estilos/menu_estilo.css">
+    <title>Pizzaria Delícia</title>
+</head>
+<body>
+
+<header>
+   <img src="pd-img/pizzaria-delcia---header.png" alt="Logo da Pizzaria Delícia">
+</header>
+
+<nav>
+    <ul>
+    <li><a href="#contato">Contato</a></li>
+    <li><a href="#localizacao">Localização</a></li>
+    </ul>
+</nav>
+
+<!-- Botão de ocultar/mostrar menu lateral -->
+<button id="toggleBtn">Ocultar Menu</button>
+
+<!-- Menu lateral -->
+<div class="sidebar" id="sidebar">
+    <ul>
+        <li><a href="pizzadel_home_main.html">Voltar</a></li>
+        <li><a href="pizzadel_pedido.html">Fazer Pedido</a></li>
+        <li><a href="#" onclick="openModal('contactModal')">Localização e Contato</a></li>
+        <li><a href="#" onclick="openModal('aboutModal')">Sobre a Pizzaria</a></li>
+    </ul>
+</div>
+
+<br><br>
+<div class="cardapio-container">
+    <h1 class="center-text" id="content">Cardápio</h1>
+</div>
+<br><br>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Aba1')" id="defaultOpen">Pizzas</button>
+        <button class="tablinks" onclick="openTab(event, 'Aba2')">Pizzas Doces</button>
+        <button class="tablinks" onclick="openTab(event, 'Aba3')">Bebidas</button>
+    </div>
+    
+    <div id="Aba1" class="tab-content">
+        <h1>Pizzas</h1>
+        <p>Escolha a sua Pizza.</p> <br> <br>
+        <img src="pd-img/pizzamargherita.jpg"
+        alt="Margherita" width="400">
+        <p class="center-paragraph"></p>
+        <h2>Margherita</h2>
+        <p>Molho de tomate, mussarela e manjericão fresco.</p>
+        <p><strong>R$ 35,00</strong></p>
+        <br> <br> <br> <br>
+        <img src="pd-img/pizzamussarela.jpg"
+        alt="Mussarela" width="400">
+        <p class="center-paragraph"></p>
+        <h2>Mussarela</h2>
+        <p>Molho de tomate, queijo mussarela.</p>
+        <p><strong>R$ 30,00</strong></p>
+        <br> <br> <br> <br>
+        <img src="pd-img/pizzacalabresa.jpg" alt="Calabresa" width="400">
+        <p class="center-paragraph"></p>
+        <h2>Calabresa</h2>
+        <p>Molho de tomate, mussarela, calabresa e cebola.</p>
+        <p><strong>R$ 35,00</strong></p>
+        <br> <br> <br> <br>
+        <img src="pd-img/pizzaquatroqueijos.jpg"
+        alt="Quatro Queijos" width="400">
+        <p class="center-paragraph"></p>
+        <h2>Quatro Queijos</h2>
+        <p>Mussarela, gorgonzola, parmesão e catupiry.</p>
+        <p><strong>R$ 45,00</strong></p>
+        <br> <br> <br> <br>
+        <img src="pd-img/pizzafrangocatupiry.jpg"
+        alt="Frango com Catupiry" width="400">
+        <p class="center-paragraph"></p>
+        <h2>Frango com Catupiry</h2>
+        <p>Frango desfiado com requeijão cremoso.</p>
+        <p><strong>R$ 30,00</strong></p>
+        <br> <br> <br> <br>
+        <img src="pd-img/pizzaportuguesa.jpg"
+        alt="Portuguesa" width="400">
+        <p class="center-paragraph"></p>
+        <h2>Portuguesa</h2>
+        <p>Mussarela, presunto, ovo, cebola, azeitonas e ervilha.</p>
+        <p><strong>R$ 30,00</strong></p>
+        <br> <br> <br> <br>
+        <img src="pd-img/pizzaatum.jpg"
+        alt="Pizza Atum" width="400">
+        <p class="center-paragraph"></p>
+        <h2>Atum</h2>
+        <p>Atum, cebola e azeitonas.</p>
+        <p><strong>R$ 35,00</strong></p>
+        <br> <br> <br> <br>
+        <img src="pd-img/pizzapepperoni.jpg"
+        alt="Pepperoni" width="400">
+        <p class="center-paragraph"></p>
+        <h2>Pepperoni</h2>
+        <p>Mussarela e fatias de pepperoni.</p>
+        <p><strong>R$ 35,00</strong></p>
+        <br> <br> <br> <br>
+        <img src="pd-img/pizzanapolitana.jpg"
+        alt="Napolitana" width="400">
+        <p class="center-paragraph"></p>
+        <h2>Napolitana</h2>
+        <p>Molho de tomate, mussarela, parmesão e orégano.</p>
+        <p><strong>R$ 40,00</strong></p>
+        <br> <br> <br> <br>
+        <img src="pd-img/pizzapalmito.jpg"
+        alt="Palmito" width="400">
+        <p class="center-paragraph"></p>
+        <h2>Palmito</h2>
+        <p>Mussarela, palmito e azeitonas.</p>
+        <p><strong>R$ 45,00</strong></p>
+        <br> <br> <br> <br>
+        <img src="pd-img/pizzavegetariana.jpg"
+        alt="Vegetariana" width="400">
+        <p class="center-paragraph"></p>
+        <h2>Vegetariana</h2>
+        <p>Vários vegetais como tomate, brócolis, cebola, pimentão, azeitona e abobrinha.</p>
+        <p><strong>R$ 30,00</strong></p>
+        <br> <br> <br> <br>
+        <img src="pd-img/pizzabacon.jpg"
+        alt="Bacon" width="400">
+        <p class="center-paragraph"></p>
+        <h2>Bacon</h2>
+        <p>Mussarela, fatias de bacon e cebola.</p>
+        <p><strong>R$ 40,00</strong></p>
+        <br> <br> <br>
+    </div>
+    
+    <div id="Aba2" class="tab-content">
+        <h1>Pizzas Doces</h1>
+        <p>Escolha a sua Pizza Doce.</p> <br> <br>
+        <img src="pd-img/pizzachocolate.jpg"
+        alt="Chocolate" width="400">
+        <p class="center-paragraph"></p>
+        <h2>Chocolate</h2>
+        <p>Massa com cobertura de chocolate ao leite.</p>
+        <p><strong>R$ 45,00</strong></p>
+        <br> <br> <br> <br>
+        <img src="pd-img/pizzamussarelagoiabada.jpg"
+        alt="Romeu e Julieta" width="400">
+        <p class="center-paragraph"></p>
+        <h2>Romeu e Julieta</h2>
+        <p>Mussarela com goiabada.</p>
+        <p><strong>R$ 40,00</strong></p>
+        <br> <br> <br> <br>
+        <img src="pd-img/pizzabananacanela.jpg"
+        alt="Banana com Canela" width="400">
+        <p class="center-paragraph"></p>
+        <h2>Banana com Canela</h2>
+        <p>Banana fatiada, açúcar e canela.</p>
+        <p><strong>R$ 35,00</strong></p>
+        <br> <br> <br> <br>
+        <img src="pd-img/pizzabrigadeiro.jpg"
+        alt="Brigadeiro" width="400">
+        <p class="center-paragraph"></p>
+        <h2>Brigadeiro</h2>
+        <p>Chocolate granulado com leite condensado.</p>
+        <p><strong>R$ 35,00</strong></p>
+        <br> <br> <br> <br>
+        <img src="pd-img/pizzamorangochocolate.jpg"
+        alt="Morango com Chocolate" width="400">
+        <p class="center-paragraph"></p>
+        <h2>Morango com Chocolate</h2>
+        <p>Cobertura de morangos com chocolate derretido.</p>
+        <p><strong>R$ 35,00</strong></p>
+        <br> <br> <br> <br>
+        <img src="pd-img/pizzadoceleitecoco.jpg"
+        alt="Doce de Leite com Coco" width="400">
+        <p class="center-paragraph"></p>
+        <h2>Doce de Leite com Coco</h2>
+        <p>Doce de leite coberto com coco ralado.</p>
+        <p><strong>R$ 35,00</strong></p> <br> <br> <br>
+    </div>
+
+    <div id="Aba3" class="tab-content">
+        <h1>Bebidas</h1>
+        <p>Escolha a sua bebida.</p> <br> <br>
+        <p class="center-paragraph"></p>
+        <div class="refrigerante-box"><h2>Refrigerantes</h2>
+            <p>Coca-Cola (tradicional, zero açúcar, sem cafeína) <br> <br>
+                Pepsi (tradicional, diet, zero) <br> <br>
+                Fanta (sabores como laranja, uva, guaraná) <br> <br>
+                Sprite (tradicional, zero açúcar) <br> <br>
+                Guaraná Antarctica (tradicional, zero) <br> <br>
+                Schweppes (Citrus, tônica) <br> <br>
+                Soda Limonada <br> <br>
+                Itubaína <br> <br>
+                H2OH! (água saborizada) <br> <br></p>
+                <h2>Latas de 350ml:</h2>
+                Coca-Cola, Fanta, Guaraná, Pepsi: R$ 5,00 a R$ 8,00 <br> <br> <br>
+                <h2>Garrafas de 600ml:</h2>
+                Coca-Cola, Fanta, Guaraná, Pepsi: R$ 8,00 a R$ 12,00 <br> <br> <br>
+                <h2>Garrafas de 1,5L ou 2L:</h2>
+                Coca-Cola, Fanta, Guaraná, Pepsi: R$ 10,00 a R$ 15,00 <br></p>
+            <br> <br>
+        </div>
+        <br> <br>
+        <div class="refrigerante-box"><h2>Bebidas Não Alcoólicas</h2>
+            <p> <h4>Água (Com ou sem gás):</h4> R$ 4,00 a R$ 8,00.<br>
+                <h4>Suco Natural (Laranja, limão, abacaxi, maracujá, etc.):</h4> R$ 8,00 a R$ 15,00. <br>
+                <h4>Suco de Caixinha (Uva, laranja, pêssego, etc.):</h4> R$ 5,00 a R$ 10,00. <br>
+                <h4>Chá Gelado (Limão, pêssego):</h4> R$ 6,00 a R$ 12,00. <br>
+                <h4>Água de Coco:</h4> R$ 6,00 a R$ 12,00. <br>
+                <h4>Milkshake (Chocolate, morango, baunilha):</h4> R$ 12,00 a R$ 20,00. <br>
+                <h4>Energéticos:</h4> R$ 10,00 a R$ 18,00. <br></p>
+            </div> <br> <br>
+        <div class="refrigerante-box"><h2>Bebidas Alcoólicas</h2>
+            <p> <h5>Cerveja (long neck):</h5> R$ 8,00 a R$ 15,00. <br>
+                <h5>Cerveja (garrafa 600ml):</h5> R$ 12,00 a R$ 25,00. <br>
+                <h5>Chopp:</h5> R$ 10,00 a R$ 18,00 (copo). <br>
+                <h5>Vinho (taça):</h5> R$ 15,00 a R$ 30,00. <br>
+                <h5>Vinho (garrafa):</h5> R$ 60,00 a R$ 200,00 (ou mais, dependendo da marca e origem). <br>
+                <h5>Caipirinha:</h5> R$ 15,00 a R$ 25,00. <br>
+                <h5>Caipiroska (com vodka):</h5> R$ 18,00 a R$ 30,00. <br>
+                <h5>Drinks (mojito, piña colada, etc.):</h5> R$ 20,00 a R$ 35,00. <br></p>
+            </div>
+    </div>
+
+<section id="contato">
+    <h2>Contato</h2>
+    <p>Email: contato@pizzariadelicia.com</p>
+    <p>Telefone: (11) 1234-5678</p>
+</section>
+
+<section id="localizacao">
+    <h2>Localização</h2>
+    <p>Rua das Pizzas, 123 - Centro, São Paulo, SP</p>
+</section>
+
+<footer>
+    <p>Pizzaria Delícia &copy; 2024</p>
+</footer> 
+
+<script src="pd-scripts/sidebar_script.js"></script>
+<script src="pd-scripts/modals_script.js"></script>
+<script src="pd-scripts/menu-elements_script.js"></script>
+
+<!-- Janelas Modais -->
+
+<div id="contactModal" class="modal">
+    <div class="modal-content">
+        <h2>Localização</h2>
+        <p>Rua das Pizzas, 123 - Centro, São Paulo, SP</p>
+        <h2>Contato</h2>
+        <p>Email: contato@pizzariadelicia.com</p>
+        <p>Telefone: (11) 1234-5678</p>
+        <button class="close-btn" onclick="closeModal('contactModal')">Fechar</button>
+    </div>
+</div>
+
+<div id="aboutModal" class="modal">
+    <div class="modal-content">
+        <h2>Sobre Nós</h2>
+        <p>Informações sobre a empresa e equipe.</p>
+        <button class="close-btn" onclick="closeModal('aboutModal')">Fechar</button>
+    </div>
+</div>
+
+</body>
+</html>

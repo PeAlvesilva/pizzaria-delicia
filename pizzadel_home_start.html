@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="pd-img/monogram-16px.png" type="image/x-icon">  <!-- Favicon adicionado -->
+    <link rel="stylesheet" href="pd-estilos/home_estilo.css">
+    <title>Pizzaria Delícia</title>
+</head>
+<body>
+
+<header>
+    <img src="pd-img/pizzaria-delcia---header.png" alt="Logo da Pizzaria Delícia">
+</header>
+
+<nav>
+    <ul>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#contato">Contato</a></li>
+    <li><a href="#localizacao">Localização</a></li>
+    </ul>
+</nav>
+
+<!-- Botão de ocultar/mostrar menu lateral -->
+<button id="toggleBtn">Ocultar Menu</button>
+
+<!-- Menu lateral -->
+<div class="sidebar" id="sidebar">
+    <ul>
+        <li><a href="pizzadel_menu.html">Ver Cardápio</a></li>
+        <li><a href="pizzadel_pedido.html">Fazer Pedido</a></li>
+        <li><a href="#" onclick="openModal('contactModal')">Localização e Contato</a></li>
+        <li><a href="#" onclick="openModal('aboutModal')">Sobre a Pizzaria</a></li>
+    </ul>
+</div>
+
+<div id="boas-vindas" class="boas-vindas-hud"></div>
+
+<section id="menu" class="center-content">
+    <h1>Nosso Menu</h1><br> <br> <br>
+    <div class="menu-item">
+        <h4>Pizza Margherita</h4>
+        <img src="pd-img/pizzamargherita.jpg" alt="Pizza Margherita" width="400">
+        <p>Molho de tomate, mussarela e manjericão fresco.</p>
+        <p><strong>R$ 35,00</strong></p>
+    </div><br> <br>
+    <div class="menu-item">
+        <h4>Pizza Calabresa</h4>
+        <img src="pd-img/pizzacalabresa.jpg" alt="Pizza calabresa" width="400">
+        <p>Molho de tomate, mussarela, calabresa e cebola.</p>
+        <p><strong>R$ 40,00</strong></p>
+    </div><br> <br>
+    <div class="menu-item">
+        <h4>Pizza Quatro Queijos</h4>
+        <img src="pd-img/pizzaquatroqueijos.jpg" alt="Pizza Quatro Queijos" width="400">
+        <p>Mussarela, gorgonzola, parmesão e catupiry.</p>
+        <p><strong>R$ 45,00</strong></p>
+    </div><br> <br>
+</section>
+
+<section id="contato">
+    <h2>Contato</h2>
+    <p>Email: contato@pizzariadelicia.com</p>
+    <p>Telefone: (11) 1234-5678</p>
+</section>
+
+<section id="localizacao">
+    <h2>Localização</h2>
+    <p>Rua das Pizzas, 123 - Centro, São Paulo, SP</p>
+</section>
+
+<footer>
+    <p>Pizzaria Delícia &copy; 2024</p>
+</footer>
+
+<script src="pd-scripts/home_start-elements_script.js"></script>
+<script src="pd-scripts/sidebar_script.js"></script>
+
+<!-- Janelas Modais -->
+
+<div id="contactModal" class="modal">
+    <div class="modal-content">
+        <h2>Localização</h2>
+        <p>Rua das Pizzas, 123 - Centro, São Paulo, SP</p><br>
+        <h2>Contato</h2>
+        <p>Email: contato@pizzariadelicia.com</p>
+        <p>Telefone: (11) 1234-5678</p>
+        <button class="close-btn" onclick="closeModal('contactModal')">Fechar</button>
+    </div>
+</div>
+
+<div id="aboutModal" class="modal">
+    <div class="modal-content">
+        <h2>Sobre Nós</h2>
+        <p>Informações sobre a empresa e equipe.</p>
+        <button class="close-btn" onclick="closeModal('aboutModal')">Fechar</button>
+    </div>
+</div>
+</body>
+</html>

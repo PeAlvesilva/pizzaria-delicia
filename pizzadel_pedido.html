@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="pd-img/monogram-16px.png" type="image/x-icon">  <!-- Favicon adicionado -->
+    <link rel="stylesheet" href="pd-estilos/pedido_estilo.css">
+    <title>Pizzaria Delícia</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Faça seu pedido</h1>
+
+        <!-- Escolha do sabor da pizza salgada -->
+        <label for="sabor" id="font-bold">Escolha o sabor da pizza salgada:</label>
+        <select id="sabor">
+            <option value="nenhuma" data-preco="0">Nenhuma</option>
+            <option value="margherita" data-preco="35">Margherita - R$ 35,00</option>
+            <option value="mussarela" data-preco="30">Mussarela - R$ 30,00</option>
+            <option value="calabresa" data-preco="35">Calabresa - R$ 35,00</option>
+            <option value="frango_catupiry" data-preco="30">Frango com Catupiry - R$ 30,00</option>
+            <option value="portuguesa" data-preco="30">Portuguesa - R$ 30,00</option>
+            <option value="quatro_queijos" data-preco="45">Quatro Queijos - R$ 45,00</option>
+            <option value="atum" data-preco="35">Atum - R$ 35,00</option>
+            <option value="pepperoni" data-preco="35">Pepperoni - R$ 35,00</option>
+            <option value="palmito" data-preco="45">Palmito - R$ 45,00</option>
+            <option value="vegetariana" data-preco="30">Vegetariana - R$ 30,00</option>
+            <option value="bacon" data-preco="40">Bacon - R$ 40,00</option>
+        </select>
+
+        <label for="sabor-doce" id="font-bold">Escolha o sabor da pizza doce:</label>
+        <select id="sabor-doce">
+            <option value="nenhuma" data-preco="0">Nenhuma</option>
+            <option value="chocolate" data-preco="45">Chocolate - R$ 45,00</option>
+            <option value="romeu-e-julieta" data-preco="40">Romeu e Julieta - R$ 40,00</option>
+            <option value="banana-com-canela" data-preco="35">Banana com Canela - R$ 35,00</option>
+            <option value="brigadeiro" data-preco="35">Brigadeiro - R$ 35,00</option>
+            <option value="morango-com-chocolate" data-preco="35">Morango com Chocolate - R$ 35,00</option>
+            <option value="doce-de-leite-com-coco" data-preco="35">Doce de leite com coco - R$ 35,00</option>
+        </select>
+
+        <!-- Escolha do tamanho da pizza -->
+        <label for="tamanho" id="font-bold">Escolha o tamanho:</label>
+        <select id="tamanho">
+            <option value="pequena" data-multiplier="1">Pequena</option>
+            <option value="media" data-multiplier="1.5">Média</option>
+            <option value="grande" data-multiplier="2">Grande</option>
+        </select>
+
+        <!-- Adicionais -->
+        <label id="font-bold">Adicionais:</label><br>
+        <label for="coca-cola">Coca-Cola</label>
+        <input type="checkbox" id="coca-cola" value="Coca-Cola" data-preco="0"><br>
+
+        <label for="pepsi">Pepsi</label>
+        <input type="checkbox" id="pepsi" value="Pepsi" data-preco="0"><br>
+
+        <label for="fanta">Fanta</label>
+        <input type="checkbox" id="fanta" value="Fanta" data-preco="0"><br>
+
+        <label for="sprite">Sprite</label>
+        <input type="checkbox" id="sprite" value="Sprite" data-preco="0"><br>
+
+        <label for="guarana-antarctica">Guaraná Antarctica</label>
+        <input type="checkbox" id="guarana-antarctica" value="Guaraná Antarctica" data-preco="0"><br>
+
+        <label for="schweppes">Schweppes</label>
+        <input type="checkbox" id="schweppes" value="Schweppes" data-preco="0"><br>
+
+        <label for="soda-limonada">Soda Limonada</label>
+        <input type="checkbox" id="soda-limonada" value="Soda Limonada" data-preco="0"><br>
+
+        <label for="itubaina">Itubaína</label>
+        <input type="checkbox" id="itubaina" value="Itubaína" data-preco="0"><br>
+
+        <label for="h2oh">H2OH! (água saborizada)</label>
+        <input type="checkbox" id="h2oh" value="H2OH!" data-preco="0"><br>
+
+        <label for="lata350ml">Latas de 350ml - R$ 6,00</label>
+        <input type="checkbox" id="lata350ml" value="Latas de 350ml" data-preco="6"><br>
+
+        <label for="garrafa600ml">Garrafas de 600ml - R$ 10,00</label>
+        <input type="checkbox" id="garrafa600ml" value="Garrafas de 600ml" data-preco="10"><br>
+
+        <label for="garrafa15-2l">Garrafas de 1,5L ou 2L - R$ 12,00</label>
+        <input type="checkbox" id="garrafa15-2l" value="Garrafas de 1,5L ou 2L" data-preco="12"><br>
+
+        <label for="agua">Água (Com ou sem gás) - R$ 8,00</label>
+        <input type="checkbox" id="agua" value="Água" data-preco="8"><br>
+
+        <label for="suco-natural">Suco Natural - R$ 10,00</label>
+        <input type="checkbox" id="suco-natural" value="Suco Natural" data-preco="10"><br>
+
+        <label for="suco-caixinha">Suco de Caixinha - R$ 10,00</label>
+        <input type="checkbox" id="suco-caixinha" value="Suco de Caixinha" data-preco="10"><br>
+
+        <label for="cha-gelado">Chá Gelado - R$ 8,00</label>
+        <input type="checkbox" id="cha-gelado" value="Chá Gelado" data-preco="8"><br>
+
+        <label for="agua-coco">Água de coco - R$ 6,00</label>
+        <input type="checkbox" id="agua-coco" value="Água de Coco" data-preco="6"><br>
+
+        <label for="milkshake">Milkshake - R$ 12,00</label>
+        <input type="checkbox" id="milkshake" value="Milkshake" data-preco="12"><br>
+
+        <label for="energetico">Energético - R$ 15,00</label>
+        <input type="checkbox" id="energetico" value="Energético" data-preco="15"><br><br>
+
+        <button onclick="confirmarPedido()">Confirmar Pedido</button>
+
+        <p id="resultado"></p>
+    </div>
+
+    <script src="pd-scripts/pedido-elements_script.js"></script>
+</body>
+</html>
