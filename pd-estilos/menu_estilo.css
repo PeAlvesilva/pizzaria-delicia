@@ -132,13 +132,6 @@ nav ul li a:hover {
     z-index: 1000;
 }
 
-@media (max-width: 600px) {
-    .button-link {
-        padding: 15px 30px;
-        font-size: 14px;
-    }
-}
-
 .tab {
     display: flex;
     cursor: pointer;
@@ -195,7 +188,7 @@ nav ul li a:hover {
     border-radius: 10px; /* Bordas arredondadas */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para o efeito de destaque */
     max-width: 800px; /* Largura máxima */
-    width: 95%;
+    width: 100%;
     margin: 0 auto; /* Centraliza o retângulo */
     text-align: center; /* Centraliza o conteúdo */
 }
@@ -203,18 +196,21 @@ nav ul li a:hover {
 
 #Aba1 {
     background-color: rgb(255, 230, 90); /* Define a cor de fundo branco para a aba */
+    width: 100%; /* Faz o fundo branco preencher toda a largura disponível */
     box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
     min-height: 1200px;
 }
 
 #Aba2 {
     background-color: rgb(255, 230, 90); /* Define a cor de fundo branco para a aba */
+    width: 100%; /* Faz o fundo branco preencher toda a largura disponível */
     box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
     min-height: 1200px;
 }
 
 #Aba3 {
     background-color: rgb(255, 230, 90); /* Define a cor de fundo branco para a aba */
+    width: 100%; /* Faz o fundo branco preencher toda a largura disponível */
     box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
     min-height: 2600px;
 }
@@ -235,7 +231,7 @@ footer {
     text-align: center;
     background-color: #da0000;
     color: white;
-    padding: 50px 0;
+    padding: 30px 0;
 }
 
 .menu-item {
@@ -321,4 +317,26 @@ img {
     max-width: 80%;
     margin: 0 auto;
     text-align: center;
+}
+
+@media (max-width: 1000px) {
+
+    .cardapio-container {
+        width: 400px;
+    }
+
+    img {
+        width: 250px;
+    }
+
+    .sidebar {
+        height: 55%;
+    }
+}
+
+@media (max-width: 600px) {
+    .button-link {
+        padding: 15px 30px;
+        font-size: 14px;
+    }
 }

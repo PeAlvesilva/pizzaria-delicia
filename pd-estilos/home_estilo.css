@@ -155,7 +155,7 @@ footer {
     text-align: center;
     background-color: #da0000;
     color: white;
-    padding: 50px 0;
+    padding: 30px 0;
 }
 .menu-item {
     margin-bottom: 15px;
@@ -220,8 +220,28 @@ img {
     border-radius: 15px;
     font-size: 30px;
     color: white;
+    word-wrap: break-word;
 }
 
 .boas-vindas-hud strong {
     font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+
+    .boas-vindas-hud {
+        width: 430px;
+    }
+    
+    li a {
+        padding: 3px 8px;
+    }
+
+    img {
+        width: 250px;
+    }
+
+    .sidebar {
+        height: 80%;
+    }
 }
