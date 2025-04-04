@@ -40,7 +40,6 @@ header img {
 nav {
     background-color: whitesmoke;
     padding: 0 30px;
-    width: 95.5%;
     height: 12vh;
     display: flex;
     justify-content: center;
@@ -196,7 +195,7 @@ nav ul li a:hover {
     border-radius: 10px; /* Bordas arredondadas */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para o efeito de destaque */
     max-width: 800px; /* Largura máxima */
-    width: 100%;
+    width: 95%;
     margin: 0 auto; /* Centraliza o retângulo */
     text-align: center; /* Centraliza o conteúdo */
 }
@@ -204,24 +203,18 @@ nav ul li a:hover {
 
 #Aba1 {
     background-color: rgb(255, 230, 90); /* Define a cor de fundo branco para a aba */
-    padding: 0.08px; /* Adiciona preenchimento interno */
-    width: 100%; /* Faz o fundo branco preencher toda a largura disponível */
     box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
     min-height: 1200px;
 }
 
 #Aba2 {
     background-color: rgb(255, 230, 90); /* Define a cor de fundo branco para a aba */
-    padding: 0.08px; /* Adiciona preenchimento interno */
-    width: 100%; /* Faz o fundo branco preencher toda a largura disponível */
     box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
     min-height: 1200px;
 }
 
 #Aba3 {
     background-color: rgb(255, 230, 90); /* Define a cor de fundo branco para a aba */
-    padding: 0.08px; /* Adiciona preenchimento interno */
-    width: 100%; /* Faz o fundo branco preencher toda a largura disponível */
     box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
     min-height: 2600px;
 }
