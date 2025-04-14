@@ -68,3 +68,15 @@ img {
     border-radius: 10px;
     margin: 20px 0;
 }
+
+@media (max-width: 1024px) {
+    body {
+        background-image: url(../pd-img/pizzabg600.jpg);
+    }
+
+    .content {
+        width: 350px;
+        height: 300px;
+        margin: 15px auto;
+    }
+}
