@@ -78,3 +78,9 @@ img {
         width: 200px;
     }
 }
+
+@media (max-width: 600px) {
+    body {
+        background-image: url('../pd-img/pizzabg500.jpg');
+    }
+}
