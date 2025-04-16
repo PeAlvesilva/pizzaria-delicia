@@ -168,18 +168,10 @@ nav ul li a:hover {
 
 /* Estilo para o conteúdo das abas */
 .tab-content {
-    display: none;
     padding: 50px;
-    border: 1px solid #ccc;
     border-top: none;
-    width: 100%;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
     text-align: center;
-    min-height: 500px;
-    box-sizing: border-box;
 }
 
 .cardapio-container {
@@ -188,7 +180,6 @@ nav ul li a:hover {
     border-radius: 10px; /* Bordas arredondadas */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para o efeito de destaque */
     max-width: 800px; /* Largura máxima */
-    width: 100%;
     margin: 0 auto; /* Centraliza o retângulo */
     text-align: center; /* Centraliza o conteúdo */
 }
@@ -243,26 +234,6 @@ footer {
 .menu-item p {
     margin: 5px 0;
     color: #555;
-}
-
-.content {
-    margin-left: 250px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    height: 500px;
-    max-height: 80%;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.836); /* Fundo escuro */
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100px;
-    max-width: 80%;
-    margin: 0 auto;
-    padding: 40px;
-    color: white; /* Torna o texto branco */
 }
 
 img {
