@@ -180,6 +180,7 @@ nav ul li a:hover {
     border-radius: 10px; /* Bordas arredondadas */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para o efeito de destaque */
     max-width: 800px; /* Largura máxima */
+    width: 100%;
     margin: 0 auto; /* Centraliza o retângulo */
     text-align: center; /* Centraliza o conteúdo */
 }
